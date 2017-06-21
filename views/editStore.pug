@@ -1,0 +1,10 @@
+extend layout
+include mixins/_storeForm
+
+block content
+	//- if nothing is written in PUG, it is assume that it is a div
+	.inner
+		h2= title
+		+storeForm(store)
+		//- use + and the name of the mixin function to use a mixin(reusuable componenent)
+		
